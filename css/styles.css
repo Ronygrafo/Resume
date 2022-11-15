@@ -2,19 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
-    --card-bg: #cb1e41bd;
-    --shadow: 2px 5px 5px darkgray;
-    --white: whitesmoke;
-    --border-gray: 2px solid darkgray;
+    --black-steel: #2F3640;
+    --black-steel-light: #353B48;
+    --gray-cold: #718093;
+    --gray-light: #DCDDE1;
+    --primary: #4CD137;
+    --primary-hover: ##44BD32;
+    --selected: ##487EB0;
   }
-
-h1 {
-    color: crimson;
-}
-
-p{
-    color: dimgrey;
-}
