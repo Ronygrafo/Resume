@@ -1,16 +1,144 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
 }
 
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+ */
 :root {
-    --black-steel: #2F3640;
-    --black-steel-light: #353B48;
-    --gray-cold: #718093;
-    --gray-light: #DCDDE1;
-    --primary: #4CD137;
-    --primary-hover: ##44BD32;
-    --selected: ##487EB0;
+  --black-steel: #2f3640;
+  --black-steel-light: #353b48;
+  --gray-cold: #718093;
+  --gray-light: #dcdde1;
+  --primary: #4cd137;
+  --primary-hover: ##44bd32;
+  --selected: ##487eb0;
+}
+
+.cover {
+    background-image: url(../img/rony_pic-gray.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/*   TEXT STYLES */
+
+main h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--black-steel);
+}
+
+main h2{
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--black-steel-light);
+}
+
+main p{
+    font-family: 'Poppins', sans-serif;;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: var(--gray-cold);
+    text-align: center;
+}
+
+main ul{
+    list-style: none;
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 1rem;
+    
+}
+
+main ul::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+main ul li{
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--black-steel);
+    padding: 0.6rem;
+    margin-right: 0.6rem;
+    border: 1px solid var(--gray-light);
+    border-radius: 1.5rem;    
+}
+
+section{
+  margin-top: 1rem;
+}
+
+section h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--black-steel);
+}
+
+section p{
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--black-steel-light);
+}
+
+section ul{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--black-steel-light);
+    list-style: none;
+}
+
+section ul li:before {
+  content: "●";
+  font-size: 80%;
+  padding-right: 0.2rem;
+}
+
+
+
+/* MOBILE FIRST*/
+@media (max-width: 360px){
+
+.cover {
+  height: 33vh;
+  width: 100vw;
+}
+
+#infoContainer {
+  height: 67vh;
+  padding: 1rem;
+}
+main h1{
+  font-size: 1.4rem;
+}
+
+}
+
+/* MOBILE FIRST*/
+@media (min-width: 361px) and (max-width: 410px){
+
+  .cover {
+    height: 40vh;
+    width: 100vw;
+  }
+  
+  #infoContainer {
+    height: 60vh;
+    padding: 1.2rem;
+  }
+  
   }
