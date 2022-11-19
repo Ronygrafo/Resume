@@ -47,13 +47,23 @@ main p{
     font-weight: 300;
     font-size: 0.8rem;
     color: var(--gray-cold);
+    text-align: center;
 }
 
 main ul{
     list-style: none;
     display: flex;
     overflow-x: scroll;
+    margin-top: 1rem;
+    
 }
+
+main ul::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 
 main ul li{
     font-family: 'Open Sans', sans-serif;;
@@ -64,6 +74,10 @@ main ul li{
     margin-right: 0.6rem;
     border: 1px solid var(--gray-light);
     border-radius: 1.5rem;    
+}
+
+section{
+  margin-top: 1rem;
 }
 
 section h1{
@@ -81,10 +95,17 @@ section p{
 }
 
 section ul{
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 0.8rem;
     color: var(--black-steel-light);
+    list-style: none;
+}
+
+section ul li:before {
+  content: "●";
+  font-size: 80%;
+  padding-right: 0.2rem;
 }
 
 
@@ -101,5 +122,23 @@ section ul{
   height: 67vh;
   padding: 1rem;
 }
+main h1{
+  font-size: 1.4rem;
+}
 
 }
+
+/* MOBILE FIRST*/
+@media (min-width: 361px) and (max-width: 410px){
+
+  .cover {
+    height: 40vh;
+    width: 100vw;
+  }
+  
+  #infoContainer {
+    height: 60vh;
+    padding: 1.2rem;
+  }
+  
+  }
