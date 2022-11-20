@@ -6,17 +6,15 @@
   font-family: "Open Sans", sans-serif;
 }
 
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
- */
 :root {
   --black-steel: #2f3640;
   --black-steel-light: #353b48;
   --gray-cold: #718093;
   --gray-light: #dcdde1;
+  --lighther: #F5F6FA;
   --primary: #4cd137;
-  --primary-hover: ##44bd32;
-  --selected: ##487eb0;
+  --primary-hover: #44bd32;
+  --blue-selected: #487eb0;
 }
 
 .cover {
@@ -43,6 +41,7 @@ main h2{
 }
 
 main p{
+    margin-top: 0.3rem;
     font-family: 'Poppins', sans-serif;;
     font-weight: 300;
     font-size: 0.8rem;
@@ -51,29 +50,37 @@ main p{
 }
 
 main ul{
+    margin-top: 0.6rem;
     list-style: none;
     display: flex;
+    flex-wrap: nowrap;
     overflow-x: scroll;
-    margin-top: 1rem;
     
 }
 
 main ul::-webkit-scrollbar{
-    display: none;
+    display: none; /* Chrome */
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
 
 
 main ul li{
+    white-space: nowrap; /* Thank you StackOverflow */
     font-family: 'Open Sans', sans-serif;;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--black-steel);
     padding: 0.6rem;
     margin-right: 0.6rem;
     border: 1px solid var(--gray-light);
     border-radius: 1.5rem;    
+}
+
+.selected{
+  border: 2px solid var(--blue-selected);
+  color: var(--blue-selected);
+  background-color: var(--lighther);
 }
 
 section{
@@ -90,14 +97,14 @@ section h1{
 section p{
     font-family: 'Open Sans', sans-serif;;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--black-steel-light);
 }
 
 section ul{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--black-steel-light);
     list-style: none;
 }
@@ -109,18 +116,19 @@ section ul li:before {
 }
 
 
-
 /* MOBILE FIRST*/
 @media (max-width: 360px){
 
 .cover {
-  height: 33vh;
+  height: 30vh;
   width: 100vw;
 }
 
 #infoContainer {
-  height: 67vh;
-  padding: 1rem;
+  height: 70vh;
+  padding-top: 0.7rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 main h1{
   font-size: 1.4rem;
@@ -129,16 +137,22 @@ main h1{
 }
 
 /* MOBILE FIRST*/
-@media (min-width: 361px) and (max-width: 410px){
+@media (min-width: 361px) and (max-width: 460px){
 
   .cover {
-    height: 40vh;
+    height: 35vh;
     width: 100vw;
   }
+
+  main p{
+    font-size: 0.9rem;
+}
   
   #infoContainer {
-    height: 60vh;
-    padding: 1.2rem;
+    height: 65vh;
+    padding-top: 0.9rem;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
   }
   
   }
