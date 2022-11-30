@@ -11,102 +11,115 @@
   --black-steel-light: #353b48;
   --gray-cold: #718093;
   --gray-light: #dcdde1;
-  --lighther: #F5F6FA;
+  --lighther: #f5f6fa;
   --primary: #4cd137;
   --primary-hover: #44bd32;
   --blue-selected: #487eb0;
 }
 
-.cover {
-    background-image: url(../img/rony_pic-gray.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+body{
+  background-color: var(--gray-light);
+  z-index: 0;
+}
 
+#site{
+  width: auto;
+  height: auto;
+  background-color: white;
+}
+
+.cover{
+  background-color: var(--black-steel-light);
+}
+
+.cover #photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+ 
 /*   TEXT STYLES */
 
-main h1{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 1.6rem;
-    color: var(--black-steel);
+main h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--black-steel);
 }
 
-main h2{
-    font-family: 'Open Sans', sans-serif;;
-    font-weight: 400;
-    font-size: 1.1rem;
-    color: var(--black-steel-light);
+main h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--black-steel-light);
 }
 
-main p{
-    margin-top: 0.3rem;
-    font-family: 'Poppins', sans-serif;;
-    font-weight: 300;
-    font-size: 0.8rem;
-    color: var(--gray-cold);
-    text-align: center;
+main p {
+  margin-top: 0.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: var(--gray-cold);
+  text-align: center;
 }
 
-main ul{
-    margin-top: 0.6rem;
-    list-style: none;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    
+main ul {
+  margin-top: 0.6rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
 }
 
-main ul::-webkit-scrollbar{
-    display: none; /* Chrome */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+main ul::-webkit-scrollbar {
+  display: none; /* Chrome */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-
-main ul li{
-    white-space: nowrap; /* Thank you StackOverflow */
-    font-family: 'Open Sans', sans-serif;;
-    font-weight: 400;
-    font-size: 0.9rem;
-    color: var(--black-steel);
-    padding: 0.6rem;
-    margin-right: 0.6rem;
-    border: 1px solid var(--gray-light);
-    border-radius: 1.5rem;    
+main ul li {
+  white-space: nowrap; /* Thank you StackOverflow */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--black-steel);
+  padding: 0.6rem;
+  margin-right: 0.6rem;
+  border: 1px solid var(--gray-light);
+  border-radius: 2rem;
 }
 
-.selected{
+.selected {
   border: 2px solid var(--blue-selected);
   color: var(--blue-selected);
   background-color: var(--lighther);
 }
 
-section{
+section {
   margin-top: 1rem;
 }
 
-section h1{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--black-steel);
+section h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--black-steel);
 }
 
-section p{
-    font-family: 'Open Sans', sans-serif;;
-    font-weight: 400;
-    font-size: 0.9rem;
-    color: var(--black-steel-light);
+section p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--black-steel-light);
 }
 
-section ul{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 0.9rem;
-    color: var(--black-steel-light);
-    list-style: none;
+section ul {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--black-steel-light);
+  list-style: none;
 }
 
 section ul li:before {
@@ -115,44 +128,85 @@ section ul li:before {
   padding-right: 0.2rem;
 }
 
-
 /* MOBILE FIRST*/
-@media (max-width: 360px){
-
-.cover {
-  height: 30vh;
-  width: 100vw;
-}
-
-#infoContainer {
-  height: 70vh;
-  padding-top: 0.7rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-main h1{
-  font-size: 1.4rem;
-}
-
-}
-
-/* MOBILE FIRST*/
-@media (min-width: 361px) and (max-width: 460px){
-
+/* SMALL */
+@media (max-width: 360px) {
   .cover {
-    height: 35vh;
+    height: 30vh;
     width: 100vw;
   }
 
-  main p{
-    font-size: 0.9rem;
-}
-  
   #infoContainer {
-    height: 65vh;
+    height: 70vh;
+    padding-top: 0.7rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  main h1 {
+    font-size: 1.4rem;
+  }
+}
+
+/* AVERAGE*/
+@media (min-width: 361px) and (max-width: 460px) {
+  .cover {
+    height: 33vh;
+    width: 100vw;
+  }
+
+  main p {
+    font-size: 0.9rem;
+  }
+
+  #infoContainer {
+    height: 67vh;
     padding-top: 0.9rem;
     padding-right: 1.2rem;
     padding-left: 1.2rem;
   }
-  
+}
+
+/* MOBILE LANDSCAPE*/
+@media (min-width: 461px) and (max-width: 999px) {
+
+  #site{
+    height: 100vh;
+    width: 100vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    display: flex;
   }
+  #profileBar{
+    height: 100%;
+  }
+
+  .cover {
+    height: 150px;
+    width: 150px;
+    border-radius: 16px;
+  }
+
+  .cover #photo  {
+    border-radius: 16px;
+  }
+
+  #infoContainer {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding-top: 0rem;
+    padding-right: 0rem;
+    padding-left: 1.2rem;
+  }
+
+  #infoContainer::-webkit-scrollbar {
+    display: none; /* Chrome */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  main p {
+    text-align: left;
+  }
+}

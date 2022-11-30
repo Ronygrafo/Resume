@@ -1,3 +1,10 @@
+const profileRony = {
+  fullName: "Rony Romero Duque",
+  title: "Front-End Web Designer",
+  highlights:
+    "Fully Remote or Hybrid | Open to Relocation <br> Creative Thinker | C1 English Proficiency",
+};
+
 const sections = [
   {
     name: "Summary",
@@ -19,7 +26,7 @@ const sections = [
   },
   {
     name: "Graphic Designer Background",
-    id: "Graphic",
+    id: "Background",
     selected: false,
     innerPage: "ReplaceHere",
   },
@@ -31,12 +38,21 @@ const sections = [
   },
 ];
 
+function renderProfile(profile) {
+  const mainHeader = document.getElementById("mainHeader");
+  mainHeader.innerHTML = `
+    <h2>${profile.fullName}</h2>
+    <h1>${profile.title}</h1>
+    <p>${profile.highlights}</p>
+    `;
+}
+renderProfile(profileRony);
+
 function renderNav(sectionList) {
   const navBar = document.getElementById("navSections");
   navBar.innerHTML = "";
 
   sectionList.forEach((section) => {
-
     navBar.innerHTML += `
         <li id= "${section.id}"
             class = "${section.selected ? "selected" : ""}">
@@ -48,7 +64,6 @@ function renderNav(sectionList) {
 renderNav(sections);
 
 function navigatingBtns() {
-
   const navBarBtns = document.querySelectorAll("nav ul li");
 
   navBarBtns.forEach((navBnt) => {
@@ -59,7 +74,7 @@ function navigatingBtns() {
         section.selected = false;
         if (section.id === navBnt.id) {
           section.selected = true;
-        };
+        }
       });
       renderNav(sections);
       navigatingBtns();
