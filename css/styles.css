@@ -17,18 +17,18 @@
   --blue-selected: #487eb0;
 }
 
-body{
+body {
   background-color: var(--gray-light);
   z-index: 0;
 }
 
-#site{
+#site {
   width: auto;
   height: auto;
   background-color: white;
 }
 
-.cover{
+.cover {
   background-color: var(--black-steel-light);
 }
 
@@ -38,7 +38,7 @@ body{
   object-fit: cover;
   opacity: 0.4;
 }
- 
+
 /*   TEXT STYLES */
 
 main h1 {
@@ -126,87 +126,4 @@ section ul li:before {
   content: "●";
   font-size: 80%;
   padding-right: 0.2rem;
-}
-
-/* MOBILE FIRST*/
-/* SMALL */
-@media (max-width: 360px) {
-  .cover {
-    height: 30vh;
-    width: 100vw;
-  }
-
-  #infoContainer {
-    height: 70vh;
-    padding-top: 0.7rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-  main h1 {
-    font-size: 1.4rem;
-  }
-}
-
-/* AVERAGE*/
-@media (min-width: 361px) and (max-width: 460px) {
-  .cover {
-    height: 33vh;
-    width: 100vw;
-  }
-
-  main p {
-    font-size: 0.9rem;
-  }
-
-  #infoContainer {
-    height: 67vh;
-    padding-top: 0.9rem;
-    padding-right: 1.2rem;
-    padding-left: 1.2rem;
-  }
-}
-
-/* MOBILE LANDSCAPE*/
-@media (min-width: 461px) and (max-width: 999px) {
-
-  #site{
-    height: 100vh;
-    width: 100vw;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    display: flex;
-  }
-  #profileBar{
-    height: 100%;
-  }
-
-  .cover {
-    height: 150px;
-    width: 150px;
-    border-radius: 16px;
-  }
-
-  .cover #photo  {
-    border-radius: 16px;
-  }
-
-  #infoContainer {
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    padding-top: 0rem;
-    padding-right: 0rem;
-    padding-left: 1.2rem;
-  }
-
-  #infoContainer::-webkit-scrollbar {
-    display: none; /* Chrome */
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-
-  main p {
-    text-align: left;
-  }
 }
