@@ -43,7 +43,7 @@ window.addEventListener("load", function () {
 
   // RENDERING PROFILE FROM JSON FILE //
   function renderProfile() {
-    fetch("../json/profile.json")
+    fetch("/profile.json")
       .then((response) => {
         return response.json();
       })
@@ -96,7 +96,7 @@ window.addEventListener("load", function () {
 
   function summaryRender(){
 
-    fetch("../json/summary.json")
+    fetch("./json/summary.json")
     .then((response) => {
       return response.json();
     })
