@@ -1,0 +1,20 @@
+[
+    {"title":"HTML 5",
+    "level":"Proficient",
+    "experience":"1 Year",
+    "image":"../img/HTML5.png",
+    "img alt":"Same ALT info"
+    },
+    {"title":"CSS 35",
+    "level":"Proficient",
+    "experience":"1 Year",
+    "image":"../img/HTML5.png",
+    "img alt":"Same ALT info"
+    },
+    {"title":"JavaScript",
+    "level":"Proficient",
+    "experience":"1 Year",
+    "image":"../img/HTML5.png",
+    "img alt":"Same ALT info"
+    }
+ ]

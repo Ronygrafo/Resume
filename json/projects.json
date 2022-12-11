@@ -1,0 +1,12 @@
+[
+    {"title":"To Do - Web App",
+    "description":"Lorem lipsum dolor sit amet",
+    "image":"../img/HTML5.png",
+    "img alt":"Alt info is so important"
+    },
+    {"title":"Web App WIX for Laser bullshit",
+    "description":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, aut fugit, sed quia consequuntur",
+    "image":"../img/HTML5.png",
+    "img alt":"Alt info is so important"
+    }
+ ]

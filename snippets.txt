@@ -1,0 +1,34 @@
+SECCIONES DE TEXTO - DESCRIPCION SUMMARY:         
+               
+                <section>
+                    <h1>Description</h1>
+                    <p>
+                        Former Graphic Designer Leader with Frontend development fundamentals such as HTML, CSS, DOM,
+                        and JavaScript
+                    </p>
+                </section>
+
+
+ESTRUCTURA TARJETAS con corte a 5 líneas de parrafo:
+
+                <div class="gridCards">
+                    <article class="gridArticles">
+                        <div class="gridImage"></div>
+                        <div class="gridTexts">
+                            <h1 class="gridTitle">Large title  with click bait </h1>
+                            <p class="gridParagraph">Medium text parragraph edtiable from queries</p>
+                        </div>
+                    </article>
+
+
+ESTRUCTURA Stacks de Tecnologías:
+
+                <div class="gridStack">
+                    <article class="stacks">
+                        <div class="stackImg"></div>
+                        <div class="stackTexts">
+                            <h2 class="stackTitle">HTML 5</h2>
+                            <p class="stackParagraph"><strong>Level:</strong> Proficient<br>
+                                 <strong>Experience:</strong> 1 Year</p>
+                        </div>
+                    </article>

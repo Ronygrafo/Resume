@@ -39,6 +39,51 @@ body {
   opacity: 0.4;
 }
 
+.gridCards{
+  margin-top: 1rem;
+  padding-bottom: 4rem;
+  display: grid;
+  column-gap: 12px;
+  row-gap: 16px;
+  grid-template: '1 2';
+  grid-template-columns: 47%;
+}
+
+.gridCards .gridArticles{
+  height: 200px;
+  border: 1px solid var(--gray-light);
+  border-radius: 8px;
+}
+.gridImage{
+  height: 90px;
+  background-color: orange;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.gridStack{
+  margin-top: 1rem;
+  padding-bottom: 4rem;
+  display: grid;
+  row-gap: 12px;
+  grid-template: '1';
+}
+.stacks{
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  max-height: 76px;
+  border: 1px solid var(--gray-light);
+  border-radius: 8px;
+}
+
+.stackImg{
+  width: 76px;
+  height: 76px;
+  background-color: blueviolet;
+  border-radius: 8px;
+}
+
 /*   TEXT STYLES */
 
 main h1 {
@@ -88,6 +133,7 @@ main ul li {
   margin-right: 0.6rem;
   border: 1px solid var(--gray-light);
   border-radius: 2rem;
+  cursor: pointer;
 }
 
 .selected {
@@ -126,4 +172,60 @@ section ul li:before {
   content: "●";
   font-size: 80%;
   padding-right: 0.2rem;
+}
+
+.gridTexts{
+  padding: 0.5rem;
+}
+
+.gridTitle{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--black-steel-light);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gridParagraph{
+  margin-top: 2px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--black-steel-light);
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stackTexts{
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  width: 70%;
+}
+
+.stackTitle{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--black-steel-light);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.stackParagraph{
+  margin-top: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--black-steel-light);
+}
+.stackParagraph strong{
+  font-weight: 700;
+  color: var(--blue-selected);
 }
