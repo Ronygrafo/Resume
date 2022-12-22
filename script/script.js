@@ -37,13 +37,14 @@ window.addEventListener("load", function () {
   const mainHeader = document.getElementById("mainHeader");
   const navBar = document.getElementById("navSections");
   const contentContainer = document.getElementById("contentContainer");
+  const fetchURL = "";
 
   renderProfile();
   renderNav(sections);
 
   // RENDERING PROFILE FROM JSON FILE //
   function renderProfile() {
-    fetch("/profile.json")
+    fetch("https://ronygrafo.github.io/Resume/json/profile.json")
       .then((response) => {
         return response.json();
       })
@@ -96,7 +97,7 @@ window.addEventListener("load", function () {
 
   function summaryRender(){
 
-    fetch("./json/summary.json")
+    fetch("https://ronygrafo.github.io/Resume/json/summary.json")
     .then((response) => {
       return response.json();
     })
