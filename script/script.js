@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
       selected: true,
     },
     {
-      name: "Projects",
+      name: "Projects as Developer",
       id: "Projects",
       selected: false,
     },
@@ -23,7 +23,7 @@ window.addEventListener("load", function () {
       selected: false,
     },
     {
-      name: "Graphic Designer Background",
+      name: "Projects as Graphic Designer",
       id: "Background",
       selected: false,
     },

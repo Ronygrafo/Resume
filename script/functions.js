@@ -69,20 +69,19 @@ export function renderGraphic(){
     return response.json();
   })
   .then((stack) => {
-    contentContainer.innerHTML = `<div class="gridStack" id="gridStack"></div>`;
-    const gridCards = document.getElementById("gridStack");
+    contentContainer.innerHTML = `<div class="gridCards" id="gridCards"></div>`;
+    const gridCards = document.getElementById("gridCards");
     stack.forEach(item => {
       gridCards.innerHTML +=`
-      <article class="stacks">
-      <div class="stackImg">
-        <img src="${item.image}" alt="${item.imgAlt}">
-      </div>
-      <div class="stackTexts">
-          <h2 class="stackTitle">${item.title}</h2>
-          <p class="stackParagraph"><strong>Level:</strong>${item.level}<br>
-               <strong>Experience:</strong>${item.experience}</p>
-      </div>
-  </article>
+      <article class="gridArticles">
+          <div class="gridImage">
+            <img src="${item.image}" alt="${item.imgAlt}">
+          </div>
+          <div class="gridTexts">
+              <h1 class="gridTitle">${item.title}</h1>
+              <p class="gridParagraph">${item.description}</p>
+          </div>
+      </article>
     `;
   });
 });
@@ -92,11 +91,9 @@ export function renderPersonal(){
   .then((response) => {
     return response.json();
   })
-  .then((stack) => {
-    contentContainer.innerHTML = `<div class="gridStack" id="gridStack"></div>`;
-    const gridCards = document.getElementById("gridStack");
-    stack.forEach(item => {
-      gridCards.innerHTML +=`
+  .then((info) => {
+    info.forEach(item => {
+      contentContainer.innerHTML +=`
       <section>
       <h1>${item.name}</h1>
       <p>${item.telephone}</p>
