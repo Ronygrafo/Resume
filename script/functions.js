@@ -1,3 +1,5 @@
+const fetchURL = "https://ronygrafo.github.io/Resume/json";
+
 export function renderSummary(){
     fetch(`${fetchURL}/summary.json`)
     .then((response) => {
@@ -25,7 +27,9 @@ export function renderProjects(){
       project.forEach(item => {
         gridCards.innerHTML +=`
         <article class="gridArticles">
-            <div class="gridImage">${item.image}</div>
+            <div class="gridImage">
+              <img src="${item.image}" alt="${item.imgAlt}">
+            </div>
             <div class="gridTexts">
                 <h1 class="gridTitle">${item.title}</h1>
                 <p class="gridParagraph">${item.description}</p>
@@ -46,7 +50,9 @@ export function renderTech(){
     stack.forEach(item => {
       gridCards.innerHTML +=`
       <article class="stacks">
-      <div class="stackImg">${item.image}</div>
+      <div class="stackImg">
+        <img src="${item.image}" alt="${item.imgAlt}">
+      </div>
       <div class="stackTexts">
           <h2 class="stackTitle">${item.title}</h2>
           <p class="stackParagraph"><strong>Level:</strong>${item.level}<br>
@@ -68,7 +74,9 @@ export function renderGraphic(){
     stack.forEach(item => {
       gridCards.innerHTML +=`
       <article class="stacks">
-      <div class="stackImg">${item.image}</div>
+      <div class="stackImg">
+        <img src="${item.image}" alt="${item.imgAlt}">
+      </div>
       <div class="stackTexts">
           <h2 class="stackTitle">${item.title}</h2>
           <p class="stackParagraph"><strong>Level:</strong>${item.level}<br>
@@ -89,14 +97,10 @@ export function renderPersonal(){
     const gridCards = document.getElementById("gridStack");
     stack.forEach(item => {
       gridCards.innerHTML +=`
-      <article class="stacks">
-      <div class="stackImg">${item.image}</div>
-      <div class="stackTexts">
-          <h2 class="stackTitle">${item.title}</h2>
-          <p class="stackParagraph"><strong>Level:</strong>${item.level}<br>
-               <strong>Experience:</strong>${item.experience}</p>
-      </div>
-  </article>
+      <section>
+      <h1>${item.name}</h1>
+      <p>${item.telephone}</p>
+    </section>
     `;
   });
 });

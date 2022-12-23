@@ -36,7 +36,6 @@ window.addEventListener("load", function () {
   const mainHeader = document.getElementById("mainHeader");
   const navBar = document.getElementById("navSections");
   const contentContainer = document.getElementById("contentContainer");
-  const fetchURL = "https://ronygrafo.github.io/Resume/json";
 
   // FIRST INFO RENDERING //
 
@@ -47,7 +46,7 @@ window.addEventListener("load", function () {
 
   // FETCHING FROM JSON FILE //
   function renderProfile() {
-    fetch(`${fetchURL}/profile.json`)
+    fetch(`https://ronygrafo.github.io/Resume/json/profile.json`)
       .then((response) => {
         return response.json();
       })
