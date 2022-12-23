@@ -16,6 +16,10 @@
   main h1 {
     font-size: 1.4rem;
   }
+
+  .content {
+    padding-bottom: 6rem;
+  }
 }
 
 /* MOBILE AVERAGE*/
@@ -35,10 +39,14 @@
     padding-right: 1.2rem;
     padding-left: 1.2rem;
   }
+  .content {
+    padding-bottom: 6rem;
+  }
 }
 
 /* MOBILE LANDSCAPE*/
 @media (min-width: 461px) and (max-height: 460px) {
+
   #site {
     height: 100vh;
     width: 100vw;
@@ -59,6 +67,9 @@
 
   .cover #photo {
     border-radius: 16px;
+  }
+  .content {
+    padding-bottom: 6rem;
   }
 
   #infoContainer {
@@ -152,6 +163,7 @@
     height: 75vh;
     width: 66vw;
     padding: 2rem;
+    margin-bottom: 4rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -174,6 +186,10 @@
 
   .cover #photo {
     border-radius: 16px;
+  }
+
+  .content {
+    padding-bottom: 1rem;
   }
 
   #infoContainer {
@@ -226,6 +242,7 @@
 /* TABLET LANDSCAPE & LAPTOP */
 
 @media (min-width: 1000px) and (max-width: 1920px) and (min-height: 461px) {
+
   body {
     height: 100vh;
     width: 100vw;
@@ -255,6 +272,10 @@
 
   .cover #photo {
     border-radius: 16px;
+  }
+
+  .content {
+    padding-bottom: 1rem;
   }
 
   #infoContainer {
@@ -324,11 +345,18 @@
   .stackParagraph {
     margin-top: 1px;
   }
+  .stackImg img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
 }
 
 /* TV and BIG SCREENS */
 
 @media (min-width: 1921px) {
+
   body {
     height: 100vh;
     width: 100vw;
@@ -360,6 +388,10 @@
 
   .cover #photo {
     border-radius: 2rem;
+  }
+
+  .content {
+    padding-bottom: 1rem;
   }
 
   #infoContainer {
@@ -454,7 +486,7 @@
     flex-direction: column;
     max-height: 400px;
     min-width: 120px;
-    border-radius: 8px;
+    border-radius: 16px;
   }
 
   .stackImg {
@@ -476,5 +508,11 @@
   .stackParagraph {
     margin-top: 8px;
     font-size: 1.6rem;
+  }
+  .stackImg img{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 }
