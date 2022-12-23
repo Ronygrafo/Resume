@@ -1,3 +1,7 @@
+import {
+  renderSummary, renderProjects, renderTech, renderGraphic, renderPersonal
+} from "./functions.js";
+
 // FIRST INFO ON page //
 
 window.addEventListener("load", function () {
@@ -7,44 +11,43 @@ window.addEventListener("load", function () {
       name: "Summary",
       id: "Summary",
       selected: true,
-      innerPage: "ReplaceHere",
     },
     {
       name: "Projects",
       id: "Projects",
       selected: false,
-      innerPage: "ReplaceHere",
     },
     {
       name: "Tech Stack",
       id: "Tech",
       selected: false,
-      innerPage: "ReplaceHere",
     },
     {
       name: "Graphic Designer Background",
       id: "Background",
       selected: false,
-      innerPage: "ReplaceHere",
     },
     {
       name: "Personal Info",
       id: "Personal",
       selected: false,
-      innerPage: "ReplaceHere",
     },
   ];
   const mainHeader = document.getElementById("mainHeader");
   const navBar = document.getElementById("navSections");
   const contentContainer = document.getElementById("contentContainer");
-  const fetchURL = "";
+  const fetchURL = "https://ronygrafo.github.io/Resume/json";
+
+  // FIRST INFO RENDERING //
 
   renderProfile();
   renderNav(sections);
+  navigatingBtns();
+  renderSummary();
 
-  // RENDERING PROFILE FROM JSON FILE //
+  // FETCHING FROM JSON FILE //
   function renderProfile() {
-    fetch("https://ronygrafo.github.io/Resume/json/profile.json")
+    fetch(`${fetchURL}/profile.json`)
       .then((response) => {
         return response.json();
       })
@@ -60,7 +63,6 @@ window.addEventListener("load", function () {
 
   function renderNav(sectionList) {
     navBar.innerHTML = "";
-
     sectionList.forEach((section) => {
       navBar.innerHTML += `
         <li id= "${section.id}"
@@ -76,8 +78,28 @@ window.addEventListener("load", function () {
     navBarBtns.forEach((navBnt) => {
       navBnt.addEventListener("click", function () {
         console.log(navBnt.id);
+        // RENDERING SECTION FROM BUTTOM //
+
         contentContainer.innerHTML = "";
-        //summaryRender();
+
+        switch (navBnt.id) {
+          case "Summary":
+            renderSummary();
+            break;
+          case "Projects":
+            renderProjects();
+            break;
+          case "Tech":
+            renderTech();
+            break;
+          case "Background":
+            renderGraphic();
+            break;
+          case "Personal":
+            renderPersonal();
+            break;
+        }
+        // RENDERING SECTION FROM BUTTOM // 
 
         sections.forEach((section) => {
           section.selected = false;
@@ -90,28 +112,5 @@ window.addEventListener("load", function () {
       });
     });
   }
-  navigatingBtns();
-
-  function renderContent(contentID){
-  };
-
-  function summaryRender(){
-
-    fetch("https://ronygrafo.github.io/Resume/json/summary.json")
-    .then((response) => {
-      return response.json();
-    })
-    .then((summary) => {
-      summary.forEach(item => {
-        contentContainer.innerHTML +=`
-        <section>
-          <h1>${item.headline}</h1>
-          <p>${item.paragraph}</p>
-        </section>
-      `;
-    });
-  });
-
-}
 
 });
