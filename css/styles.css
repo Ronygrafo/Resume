@@ -17,6 +17,11 @@
   --blue-selected: #487eb0;
 }
 
+.stackTexts {
+  padding: 0.3rem;
+  width: 70%;
+}
+
 body {
   background-color: var(--gray-light);
   z-index: 0;
@@ -46,30 +51,20 @@ body {
   display: grid;
   column-gap: 12px;
   row-gap: 16px;
-  grid-template: '1 2';
-  grid-template-columns: 47%;
 }
 
 .gridCards .gridArticles {
-  height: 200px;
   border: 1px solid var(--gray-light);
   border-radius: 8px;
 }
 
 .gridImage {
-  height: 90px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
 }
 
 .gridImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
 }
 
 .gridStack {
@@ -77,7 +72,6 @@ body {
   padding-bottom: 4rem;
   display: grid;
   row-gap: 12px;
-  grid-template: '1';
 }
 
 .stacks {
@@ -125,9 +119,7 @@ main p {
   margin-top: 0.3rem;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 0.8rem;
   color: var(--gray-cold);
-  text-align: center;
 }
 
 main ul {
@@ -206,7 +198,6 @@ section ul li:before {
 .gridTitle {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 0.8rem;
   color: var(--black-steel-light);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -217,7 +208,6 @@ section ul li:before {
   margin-top: 2px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 0.8rem;
   color: var(--black-steel-light);
   display: block;
   display: -webkit-box;
@@ -225,12 +215,6 @@ section ul li:before {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.stackTexts {
-  margin-left: 0.5rem;
-  padding: 0.3rem;
-  width: 70%;
 }
 
 .stackTitle {

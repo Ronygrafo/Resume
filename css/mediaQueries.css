@@ -17,8 +17,38 @@
     font-size: 1.4rem;
   }
 
+  main p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
   .content {
     padding-bottom: 6rem;
+  }
+
+  .gridCards {
+    margin-top: 0rem;
+    grid-template: "1 2";
+    grid-template-columns: 47%;
+  }
+
+  .gridImage {
+    height: 100px;
+    width: 100%;
+  }
+  .gridImage img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .gridParagraph {
+    font-size: 0.8rem;
+  }
+
+  .gridTitle {
+    font-size: 0.8rem;
+    max-width: 120px;
   }
 }
 
@@ -31,6 +61,7 @@
 
   main p {
     font-size: 0.9rem;
+    text-align: center;
   }
 
   #infoContainer {
@@ -41,6 +72,29 @@
   }
   .content {
     padding-bottom: 6rem;
+  }
+  .gridCards {
+    margin-top: 0rem;
+    grid-template: "1 2";
+    grid-template-columns: 47%;
+  }
+  .gridImage {
+    height: 100px;
+    width: 100%;
+  }
+  .gridImage img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .gridParagraph {
+    font-size: 0.8rem;
+  }
+
+  .gridTitle {
+    font-size: 0.8rem;
+    max-width: 150px;
   }
 }
 
@@ -57,6 +111,9 @@
   }
   #profileBar {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .cover {
@@ -89,6 +146,7 @@
 
   main p {
     text-align: left;
+    font-size: 1rem;
   }
 
   .gridCards .gridArticles {
@@ -97,15 +155,30 @@
   }
 
   .gridCards {
+    margin-top: 0rem;
+    grid-template: "1 2";
+    grid-template-columns: 47%;
     column-gap: 16px;
   }
 
   .gridImage {
     height: 100%;
-    min-width: 40%;
+    width: 40%;
+  }
+  .gridImage img {
     border-top-left-radius: 8px;
+    border-top-right-radius: 0px;
     border-bottom-left-radius: 8px;
-    border-top-right-radius: 0;
+    border-bottom-right-radius: 0px;
+  }
+
+  .gridParagraph {
+    font-size: 0.8rem;
+  }
+
+  .gridTitle {
+    font-size: 0.8rem;
+    max-width: 120px;
   }
 
   .gridTexts {
@@ -117,14 +190,12 @@
     padding-bottom: 4rem;
     display: grid;
     column-gap: 12px;
-    grid-template: "1 2 ... ";
+    grid-template: "1 2 ";
   }
   .stacks {
     height: auto;
     display: flex;
-    flex-direction: column;
     max-height: 200px;
-    max-width: 180px;
     border-radius: 8px;
   }
 
@@ -140,7 +211,7 @@
   }
 
   .stackTitle {
-    text-align: center;
+    text-align: left;
   }
 
   .stackParagraph {
@@ -213,7 +284,8 @@
   }
 
   main p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    text-align: center;
   }
 
   main ul {
@@ -238,6 +310,25 @@
     grid-template: "1 2 3";
     grid-template-columns: 31%;
   }
+  .gridImage {
+    height: 100px;
+    width: 100%;
+  }
+  .gridImage img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .gridParagraph {
+    font-size: 0.8rem;
+  }
+
+  .gridTitle {
+    font-size: 0.8rem;
+    max-width: 120px;
+  }
+
 }
 /* TABLET LANDSCAPE & LAPTOP */
 
@@ -254,7 +345,7 @@
   #site {
     height: 540px;
     width: auto;
-    max-width: 840px;
+    max-width: 860px;
     padding: 2rem;
     border-radius: 1rem;
     display: flex;
@@ -262,6 +353,8 @@
 
   #profileBar {
     height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .cover {
@@ -306,9 +399,28 @@
     font-size: 1rem;
   }
   .gridCards {
-    margin-top: 1.4rem;
+    margin-top: 0rem;
     grid-template: "1 2 3";
     grid-template-columns: 31%;
+  }
+  .gridImage {
+    height: 100px;
+    width: 100%;
+  }
+  .gridImage img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .gridParagraph {
+    font-size: 0.8rem;
+    max-width: 200px;
+  }
+
+  .gridTitle {
+    font-size: 0.8rem;
+    max-width: 190px;
   }
 
   .gridStack {
@@ -320,16 +432,12 @@
   }
   .stacks {
     height: auto;
-    display: flex;
-    flex-direction: column;
     max-height: 200px;
-    min-width: 120px;
     border-radius: 8px;
   }
 
   .stackImg {
     width: 100%;
-    height: 70px;
   }
 
   .stackTexts {
@@ -339,7 +447,8 @@
   }
 
   .stackTitle {
-    text-align: center;
+    margin-top: 2px;
+    text-align: left;
   }
 
   .stackParagraph {
@@ -377,7 +486,8 @@
   }
 
   #profileBar {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .cover {
@@ -455,9 +565,18 @@
     border-radius: 16px;
   }
   .gridImage {
-    height: 150px;
+    height: 160px;
+    width: 100%;
+  }
+  .gridImage img {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .gridParagraph {
+    font-size: 0.8rem;
+    max-width: 200px;
   }
 
   .gridTexts {
@@ -466,6 +585,7 @@
 
   .gridTitle {
     font-size: 1.6rem;
+    max-width: 196px;
   }
 
   .gridParagraph {
