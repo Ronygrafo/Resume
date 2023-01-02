@@ -1,16 +1,21 @@
 [
+    {"title":"Personal CV website {fully coded}",
+    "description":"I built this website as a platform to showcase my projects and experience. I designed from scratch and coded  the website with the goal of promoting myself as an e-commerce product.",
+    "image":"./img/HTML5.png",
+    "imgAlt":"To Do web app using javascript"
+    },
     {"title":"To Do - Web App",
-    "description":"Lorem lipsum dolor sit amet",
+    "description":"Using Javascript and REST API, CSS and HMTL. A practice project made at Digital House's program",
+    "image":"./img/HTML5.png",
+    "imgAlt":"To Do web app using javascript"
+    },
+    {"title":"Spotifront",
+    "description":"Spotify© UI clone as a project test rendering interactive elements in the DOM using Javascript Loops",
     "image":"./img/HTML5.png",
     "imgAlt":"Alt info is so important"
     },
-    {"title":"Web App WIX for Laser bullshit",
-    "description":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, aut fugit, sed quia consequuntur",
-    "image":"./img/HTML5.png",
-    "imgAlt":"Alt info is so important"
-    },
-    {"title":"To Do - Web App",
-    "description":"Lorem lipsum dolor sit amet",
+    {"title":"Responsive Product Card",
+    "description":"This is my solution to the Product preview card component challenge on Frontend-Mentor©. Best use for e-commerce applications.",
     "image":"./img/HTML5.png",
     "imgAlt":"Alt info is so important"
     }
