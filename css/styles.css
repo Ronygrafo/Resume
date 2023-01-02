@@ -177,6 +177,12 @@ section p {
   color: var(--black-steel-light);
 }
 
+section p a {
+  text-decoration: underline;
+  color: var(--black-steel-light);
+  text-decoration-color: var(--gray-light);
+}
+
 section ul {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;

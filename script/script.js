@@ -28,7 +28,7 @@ window.addEventListener("load", function () {
       selected: false,
     },
     {
-      name: "Personal Info",
+      name: "Contact Info",
       id: "Personal",
       selected: false,
     },
@@ -111,5 +111,7 @@ window.addEventListener("load", function () {
       });
     });
   }
+
+  
 
 });

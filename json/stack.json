@@ -2,37 +2,37 @@
     {"title":"React",
     "level":"Beginner",
     "experience":"3 months",
-    "image":"./img/HTML5.png",
+    "image":"./img/react.png",
     "imgAlt":"React js badge logo"
     },
     {"title":"JavaScript",
     "level":"Proficient",
     "experience":"1 Year",
-    "image":"./img/HTML5.png",
+    "image":"./img/js.png",
     "imgAlt":"Javascript js badge logo"
     },
     {"title":"HTML 5",
     "level":"Proficient",
     "experience":"1.5 Years",
-    "image":"./img/HTML5.png",
+    "image":"./img/html.png",
     "imgAlt":"HTML5 badge logo"
     },
     {"title":"CSS 3",
     "level":"Proficient",
     "experience":"1 Year",
-    "image":"./img/HTML5.png",
+    "image":"./img/css.png",
     "imgAlt":"CSS3 badge logo"
     },
     {"title":"MySQL",
     "level":"Proficient",
     "experience":"6 Months",
-    "image":"./img/HTML5.png",
+    "image":"./img/mysql.png",
     "imgAlt":"MySQL badge logo"
     },
     {"title":"Git",
     "level":"Beginner",
     "experience":"6 Months",
-    "image":"./img/HTML5.png",
+    "image":"./img/git.png",
     "imgAlt":"Git badge logo"
     }
  ]
