@@ -1,11 +1,14 @@
 [
-    {"name":"Mobile:",
-    "telephone":"🇨🇴 +57 (310) 405 1410"
+    {"title":"Mobile:",
+    "text":"🇨🇴 <a href='tel:+57310405141' target='_blank'>+57 (310) 405 1410</a>",
+    "link":"tel:+573104051410"
     },
-    {"name":"e-mail:",
-    "telephone":"mailto:ronygrafo@icloud.com"
+    {"title":"e-mail:",
+    "text":"✉️ <a href='tel:+57310405141' target='_blank'>ronygrafo@icloud.com</a>",
+    "link":"mailto:ronygrafo@icloud.com"
     },
-    {"name":"LinkedIn",
-    "telephone":"<a href='https://www.linkedin.com/in/ronygrafo/' target='_blank'><i class='fa-brands fa-linkedin'></i>/in/ronygrafo</a>"
+    {"title":"LinkedIn",
+    "text":"<a href='https://www.linkedin.com/in/ronygrafo/' target='_blank'><i class='fa-brands fa-linkedin'></i>/in/ronygrafo</a>",
+    "link":"https://www.linkedin.com/in/ronygrafo/"
     }
 ]

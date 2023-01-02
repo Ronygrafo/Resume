@@ -84,6 +84,12 @@ export function renderGraphic(){
       </article>
     `;
   });
+  contentContainer.innerHTML += `<p class="stackParagraph"> <br>
+    To download my graphic design portfolio 
+    <a href="https://drive.google.com/file/d/1Qd7bzskdXh-U1G2Z8WZgVSo19ZPGggnG/view?usp=share_link" target="_blank">
+    <strong>click here</strong>
+    </a>
+    </p>`
 });
 }
 export function renderPersonal(){
@@ -95,8 +101,8 @@ export function renderPersonal(){
     info.forEach(item => {
       contentContainer.innerHTML +=`
       <section>
-      <h1>${item.name}</h1>
-      <p>${item.telephone}</p>
+      <h1>${item.title}</h1>
+      <p>${item.text}</p>
     </section>
     `;
   });
