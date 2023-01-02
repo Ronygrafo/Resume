@@ -428,7 +428,7 @@
     padding-bottom: 4rem;
     display: grid;
     column-gap: 12px;
-    grid-template: "1 2 3 4 ";
+    grid-template: "1 2 3";
   }
   .stacks {
     height: auto;

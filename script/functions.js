@@ -55,8 +55,8 @@ export function renderTech(){
       </div>
       <div class="stackTexts">
           <h2 class="stackTitle">${item.title}</h2>
-          <p class="stackParagraph"><strong>LEVEL: </strong>${item.level}<br>
-               <strong>EXP: </strong>${item.experience}</p>
+          <p class="stackParagraph"><strong>Lvl: </strong>${item.level}<br>
+               <strong>Exp: </strong>${item.experience}</p>
       </div>
   </article>
     `;
