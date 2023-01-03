@@ -12,11 +12,11 @@
     "link":"https://wa.me/573104051410?text=Hey!%I%just%saw%your%website"
     },
     {"title":"LinkedIn:",
-    "text":"<a href='https://www.linkedin.com/in/ronygrafo/' target='_blank'><i class='fa-brands fa-linkedin'> </i> /in/ronygrafo</a>",
+    "text":"<a href='https://www.linkedin.com/in/ronygrafo/' target='_blank'><i class='fa-brands fa-linkedin'></i> /in/ronygrafo</a>",
     "link":"https://www.linkedin.com/in/ronygrafo/"
     },
     {"title":"Github:",
-    "text":"<a href='https://www.linkedin.com/in/ronygrafo/' target='_blank'><i class='fa-brands fa-linkedin'> </i> /in/ronygrafo</a>",
-    "link":"https://www.linkedin.com/in/ronygrafo/"
+    "text":"<a href='https://github.com/Ronygrafo' target='_blank'><<i class='fa-brands fa-github'></i> /in/ronygrafo</a>",
+    "link":"https://github.com/Ronygrafo"
     }
 ]
