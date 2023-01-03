@@ -56,9 +56,7 @@ body {
 .gridCards .gridArticles {
   border: 1px solid var(--gray-light);
   border-radius: 8px;
-}
-
-.gridImage {
+  max-width: 190px;
 }
 
 .gridImage img {
