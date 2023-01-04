@@ -1,27 +1,27 @@
 [
     {"title":"Personal CV website",
     "description":"I built this website as a platform to showcase my projects and experience. I designed from scratch and coded  the website with the goal of promoting myself as an e-commerce product.",
-    "image":"./img/HTML5.png",
+    "image":"./img/CV-website.png",
     "imgAlt":"Personal Website"
     },
     {"title":"To Do - Web App",
     "description":"Using Javascript and REST API, CSS and HMTL. A practice project made at Digital House's program",
-    "image":"./img/HTML5.png",
+    "image":"./img/To-Do-App.png",
     "imgAlt":"To Do web app using javascript"
     },
     {"title":"Spotifront",
     "description":"Spotify UI clone as a project test rendering interactive elements in the DOM using Javascript Loops",
-    "image":"./img/HTML5.png",
+    "image":"./img/spotifront.png",
     "imgAlt":"a Spotify clone just for fun"
     },
     {"title":"Responsive Product Card",
     "description":"This is my solution to the Product preview card component challenge on Frontend-Mentor©. Best use for e-commerce applications.",
-    "image":"./img/HTML5.png",
+    "image":"./img/FM-Challenge.png",
     "imgAlt":"Responsive Product Card"
     },
     {"title":"Petshop layout",
     "description":"Final project for the Frontend course. In this project, I discovered my skills in web development.",
-    "image":"./img/HTML5.png",
+    "image":"./img/Front1-test.png",
     "imgAlt":"Petshop layout Frontend"
     }
  ]
