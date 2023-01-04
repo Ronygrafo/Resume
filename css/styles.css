@@ -56,7 +56,6 @@ body {
 .gridCards .gridArticles {
   border: 1px solid var(--gray-light);
   border-radius: 8px;
-  max-width: 190px;
 }
 
 .gridImage img {
@@ -219,6 +218,10 @@ section ul li:before {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.gridParagraph strong {
+  color: var(--blue-selected);
 }
 
 .stackTitle {
