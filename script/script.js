@@ -9,33 +9,44 @@ window.addEventListener("load", function () {
   const sections = [
     {
       name: "Summary",
-      id: "Summary",
+      id: "sum",
       selected: true,
     },
     {
       name: "Projects as Developer",
-      id: "Projects",
+      id: "pro",
       selected: false,
     },
     {
       name: "Tech Stack",
-      id: "Tech",
+      id: "tech",
       selected: false,
     },
     {
       name: "Projects as Graphic Designer",
-      id: "Background",
+      id: "gra",
       selected: false,
     },
     {
       name: "Contact Info",
-      id: "Personal",
+      id: "info",
       selected: false,
     },
   ];
   const mainHeader = document.getElementById("mainHeader");
   const navBar = document.getElementById("navSections");
   const contentContainer = document.getElementById("contentContainer");
+
+  const hireButtonAside = document.getElementById("hireBtnAside");
+  const hireButton = document.getElementById("hireBtn");
+  const saveButtonAside = document.getElementById("saveBtnAside");
+  const saveButton = document.getElementById("saveBtn");
+
+/*   console.log(hireButtonAside);
+  console.log(hireButton);
+  console.log(saveButtonAside);
+  console.log(saveButton);
+ */
 
   // FIRST INFO RENDERING //
 
@@ -76,26 +87,28 @@ window.addEventListener("load", function () {
     const navBarBtns = document.querySelectorAll("nav ul li");
     navBarBtns.forEach((navBnt) => {
       navBnt.addEventListener("click", function () {
-        console.log(navBnt.id);
+        // console.log(navBnt.id);
         // RENDERING SECTION FROM BUTTOM //
 
         contentContainer.innerHTML = "";
 
         switch (navBnt.id) {
-          case "Summary":
+          case "sum":
             renderSummary();
+            navBar.scrollLeft = 0;
             break;
-          case "Projects":
+          case "pro":
             renderProjects();
             break;
-          case "Tech":
+          case "tech":
             renderTech();
             break;
-          case "Background":
+          case "gra":
             renderGraphic();
             break;
-          case "Personal":
+          case "info":
             renderPersonal();
+            navBar.scrollLeft = 500;
             break;
         }
         // RENDERING SECTION FROM BUTTOM // 
@@ -112,6 +125,50 @@ window.addEventListener("load", function () {
     });
   }
 
-  
+  hireButtonAside.addEventListener("click", function () {
+    contentContainer.innerHTML = "";
+    renderPersonal();
+    navBar.scrollLeft = 500;
+
+    sections.forEach((section) => {
+      section.selected = false;
+      if (section.id === "info") {
+        section.selected = true;
+      }
+    });
+    renderNav(sections);
+    navigatingBtns();
+    //console.log("Hire Aside")
+  });
+  hireButton.addEventListener("click", function () {
+    contentContainer.innerHTML = "";
+    renderPersonal();
+    navBar.scrollLeft = 500;
+
+    sections.forEach((section) => {
+      section.selected = false;
+      if (section.id === "info") {
+        section.selected = true;
+      }
+    });
+    renderNav(sections);
+    navigatingBtns();
+    //console.log("Hire Footer")
+    
+  });
+  saveButtonAside.addEventListener("click", function () {
+    //console.log("Save Aside")
+  });
+  saveButton.addEventListener("click", function () {
+    //console.log("Save Footer")
+  });
+
+  console.log(navBar);
+
+  navBar.addEventListener("scroll", function (e) {
+    //console.log(e.currentTarget.scrollLeft);
+    //** Ty https://stackoverflow.com/questions/13233149/get-horizontal-scroll-event-in-js
+
+    });
 
 });
