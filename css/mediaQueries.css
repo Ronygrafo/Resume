@@ -50,6 +50,24 @@
     font-size: 0.8rem;
     max-width: 120px;
   }
+  .ligthbox{
+    width: 292px;
+    padding: 0.3rem 1rem;
+  }
+  .window h2{
+    font-size: 1rem;
+  }
+  #exclamation{
+    font-size: 5rem;
+  }
+  
+  .window p{
+    font-size: 0.8rem;
+  }
+  
+  .ligthbox a{
+    font-size: 2rem;
+  }
 }
 
 /* MOBILE AVERAGE*/
@@ -95,6 +113,24 @@
   .gridTitle {
     font-size: 0.8rem;
     max-width: 150px;
+  }
+  .ligthbox{
+    width: 300px;
+    padding: 0.3rem 1rem;
+  }
+  .window h2{
+    font-size: 1rem;
+  }
+  #exclamation{
+    font-size: 5rem;
+  }
+  
+  .window p{
+    font-size: 0.8rem;
+  }
+  
+  .ligthbox a{
+    font-size: 2rem;
   }
 }
 
@@ -217,6 +253,24 @@
   .stackParagraph {
     margin-top: 1px;
   }
+  .ligthbox{
+    width: 300px;
+    padding: 0.6rem 0.4rem;
+  }
+  .window h2{
+    font-size: 1rem;
+  }
+  #exclamation{
+    font-size: 4rem;
+  }
+  
+  .window p{
+    font-size: 0.8rem;
+  }
+  
+  .ligthbox a{
+    font-size: 2rem;
+  }
 }
 
 /* TABLET PORTRAIT */
@@ -327,6 +381,25 @@
   .gridTitle {
     font-size: 0.8rem;
     max-width: 120px;
+  }
+
+  .ligthbox{
+    width: 320px;
+    padding: 0.5rem 1.2rem;
+  }
+  .window h2{
+    font-size: 1.2rem;
+  }
+  #exclamation{
+    font-size: 5rem;
+  }
+  
+  .window p{
+    font-size: 0.8rem;
+  }
+  
+  .ligthbox a{
+    font-size: 2rem;
   }
 
 }
@@ -457,6 +530,10 @@
     border-top-right-radius: 8px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+  }
+
+  .ligthbox{
+    max-width: 460px;
   }
 }
 

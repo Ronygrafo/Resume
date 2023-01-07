@@ -214,7 +214,7 @@ section ul li:before {
   color: var(--black-steel-light);
   display: block;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -246,3 +246,85 @@ section ul li:before {
   font-weight: 700;
   color: var(--blue-selected);
 }
+
+/* LIGHTBOX */
+
+
+.noVisible{
+  position: fixed;
+  visibility: hidden;
+}
+.visible{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2f364080;
+}
+
+.ligthbox{
+  padding: 0.5rem 1.2rem;
+  border-radius: 1rem;
+  background-color: white;
+  text-align: right;
+}
+
+.window{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  position: relative;
+  bottom: 1rem;
+}
+
+.window h2{
+  text-align: center;
+  position: relative;
+  bottom: 0.5rem;
+  color: var(--black-steel-light);
+}
+#exclamation{
+  position: relative;
+  bottom: 0.5rem;
+  font-size: 6rem;
+  color: var(--gray-light);
+}
+
+.window p{
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--black-steel)
+}
+.window p strong{
+  color: var(--blue-selected)
+}
+
+.ligthbox a{
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  top: -0.5px;
+  right: 0rem;
+  width: 32px;
+  padding: 0.2rem 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.2rem;
+  color: var(--black-steel-light)
+}
+.ligthbox a:hover{
+  color: var(--primary)
+}
+

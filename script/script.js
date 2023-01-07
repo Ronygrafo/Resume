@@ -39,8 +39,11 @@ window.addEventListener("load", function () {
 
   const hireButtonAside = document.getElementById("hireBtnAside");
   const hireButton = document.getElementById("hireBtn");
+
   const saveButtonAside = document.getElementById("saveBtnAside");
   const saveButton = document.getElementById("saveBtn");
+  const closePopup = document.getElementById("popupClose");
+  const overlayWindow = document.getElementById("popup");
 
 /*   console.log(hireButtonAside);
   console.log(hireButton);
@@ -67,8 +70,8 @@ window.addEventListener("load", function () {
     <h2>${profileData.fullName}</h2>
     <h1>${profileData.title}</h1>
     <p>${profileData.highlights}</p>
-    `)
-      );
+      `))
+      .catch((error) => {});
   }
 
   function renderNav(sectionList) {
@@ -157,18 +160,23 @@ window.addEventListener("load", function () {
     
   });
   saveButtonAside.addEventListener("click", function () {
-    //console.log("Save Aside")
+    overlayWindow.classList.toggle("noVisible")
+    overlayWindow.classList.toggle("visible")
   });
   saveButton.addEventListener("click", function () {
-    //console.log("Save Footer")
+    overlayWindow.classList.toggle("noVisible")
+    overlayWindow.classList.toggle("visible")
   });
 
-  console.log(navBar);
+  closePopup.addEventListener("click", function () {
+    overlayWindow.classList.toggle("noVisible")
+    overlayWindow.classList.toggle("visible")
+  });
 
-  navBar.addEventListener("scroll", function (e) {
+/*   navBar.addEventListener("scroll", function (e) {
     //console.log(e.currentTarget.scrollLeft);
-    //** Ty https://stackoverflow.com/questions/13233149/get-horizontal-scroll-event-in-js
+    //Ty https://stackoverflow.com/questions/13233149/get-horizontal-scroll-event-in-js
 
-    });
+    }); */
 
 });

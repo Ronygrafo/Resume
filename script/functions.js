@@ -14,7 +14,8 @@ export function renderSummary(){
         </section>
       `;
     });
-  });
+  })
+  .catch((error) => {});
 }
 export function renderProjects(){
     fetch(`${fetchURL}/projects.json`)
@@ -37,7 +38,8 @@ export function renderProjects(){
         </article>
       `;
     });
-  });
+  })
+  .catch((error) => {});
 }
 export function renderTech(){
   fetch(`${fetchURL}/stack.json`)
@@ -61,7 +63,8 @@ export function renderTech(){
   </article>
     `;
   });
-});
+})
+.catch((error) => {});
 }
 export function renderGraphic(){
   fetch(`${fetchURL}/graphic.json`)
@@ -90,7 +93,8 @@ export function renderGraphic(){
     <strong>click here</strong>
     </a>
     </p>`
-});
+})
+.catch((error) => {});
 }
 export function renderPersonal(){
   fetch(`${fetchURL}/personal.json`)
@@ -106,5 +110,6 @@ export function renderPersonal(){
     </section>
     `;
   });
-});
+})
+.catch((error) => {});
 }

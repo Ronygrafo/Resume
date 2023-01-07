@@ -86,7 +86,7 @@
   aside a:hover {
     cursor: pointer;
   }
-  aside a i {
+  .socialBtns i {
     color: var(--gray-cold);
     font-size: 1.8rem;
   }

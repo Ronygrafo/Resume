@@ -34,15 +34,19 @@
           />
         </div>
         <aside>
-          <a href="https://www.linkedin.com/in/ronygrafo/" target="_blank">
+          <a class="socialBtns" href="https://www.linkedin.com/in/ronygrafo/" target="_blank">
             <i class="fa-brands fa-linkedin"></i> /in/ronygrafo
           </a>
           <ul>
             <li class="saveLater" id="saveBtnAside">
-              <a href="#">Save for later</a>
+              <a href="#">Save for later &nbsp
+                <i class="fa-regular fa-bookmark"></i>
+              </a>
             </li>
             <li class="hireNow" id="hireBtnAside">
-              <a href="#">Hire me now!</a>
+              <a href="#">Hire now!  &nbsp
+                <i class="fa-solid fa-clipboard-check"></i>
+              </a>
             </li>
           </ul>
         </aside>
@@ -57,13 +61,32 @@
         <div class="content" id="contentContainer"></div>
       </div>
     </div>
+
+  <!--    LIGHTBOX   --> 
+    <div id="popup" class="noVisible">
+      <div id="overlay" class="overlay">
+        <div class="ligthbox">
+          <a class="close" id="popupClose" href="#">&times;</a>
+          <div class="window">
+          <h2><i class="fa-solid fa-triangle-exclamation" id="exclamation"></i><br> Don't miss out the chance</h2>
+            <p>to bring this in-demand professional onto your team. If you don't act now, <strong>Rony may not be available later.</strong> 😱</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--    LIGHTBOX   --> 
+
     <footer class="footer">
       <ul>
         <li class="saveLater" id="saveBtn">
-          <a href="#">Save for later</a>
+          <a href="#">Save for later
+            <i class="fa-regular fa-bookmark"></i>
+          </a>
         </li>
         <li class="hireNow" id="hireBtn">
-          <a href="#">Hire me now!</a>
+          <a href="#">Hire now!
+          <i class="fa-solid fa-clipboard-check"></i>
+          </a>
         </li>
       </ul>
     </footer>
