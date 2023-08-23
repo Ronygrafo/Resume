@@ -13,6 +13,11 @@ window.addEventListener("load", function () {
       selected: true,
     },
     {
+      name: "UI/UX Projects",
+      id: "ui",
+      selected: false,
+    },
+    {
       name: "Projects as Developer",
       id: "pro",
       selected: false,
@@ -23,7 +28,7 @@ window.addEventListener("load", function () {
       selected: false,
     },
     {
-      name: "Projects as Graphic Designer",
+      name: "Graphic Design Projects",
       id: "gra",
       selected: false,
     },
@@ -102,6 +107,9 @@ window.addEventListener("load", function () {
             break;
           case "pro":
             renderProjects();
+            break;
+          case "ui":
+            renderUi();
             break;
           case "tech":
             renderTech();

@@ -66,6 +66,30 @@ export function renderTech(){
 })
 .catch((error) => {});
 }
+export function renderUi(){
+  fetch(`${fetchURL}/ui.json`)
+  .then((response) => {
+    return response.json();
+  })
+  .then((stack) => {
+    contentContainer.innerHTML = `<div class="gridCards" id="gridCards"></div>`;
+    const gridCards = document.getElementById("gridCards");
+    stack.forEach(item => {
+      gridCards.innerHTML +=`
+      <article class="gridArticles">
+          <div class="gridImage">
+            <img src="${item.image}" alt="${item.imgAlt}">
+          </div>
+          <div class="gridTexts">
+              <h1 class="gridTitle">${item.title}</h1>
+              <p class="gridParagraph">${item.description}</p>
+          </div>
+      </article>
+    `;
+  });
+})
+.catch((error) => {});
+}
 export function renderGraphic(){
   fetch(`${fetchURL}/graphic.json`)
   .then((response) => {
