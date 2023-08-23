@@ -1,5 +1,5 @@
 import {
-  renderSummary, renderProjects, renderTech, renderGraphic, renderPersonal
+  renderSummary, renderProjects, renderTech, renderGraphic, renderPersonal, renderUi
 } from "./functions.js";
 
 // FIRST INFO ON page //
