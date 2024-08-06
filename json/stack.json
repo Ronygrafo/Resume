@@ -1,9 +1,9 @@
 [
     {"title":"Figma",
-    "level":"Proficient",
-    "experience":"2 Years",
-    "image":"./img/html.png",
-    "imgAlt":"HTML5 badge logo"
+    "level":"Expert",
+    "experience":"3 Years",
+    "image":"./img/figma.png",
+    "imgAlt":"Figma logo"
     },
     {"title":"React.js",
     "level":"Junior",
@@ -14,8 +14,8 @@
     {"title":"Shopify / Liquid",
     "level":"Proficient",
     "experience":"2 Years",
-    "image":"./img/react.png",
-    "imgAlt":"React js badge logo"
+    "image":"./img/shopify.png",
+    "imgAlt":"Figma logo"
     },
     {"title":"JavaScript",
     "level":"Proficient",
